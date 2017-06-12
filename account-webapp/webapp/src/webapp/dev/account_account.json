@@ -1,0 +1,26 @@
+{
+	"cdp:status":"0",
+	"account":
+	{
+		"userId": 1,
+		"eid":"ggolden",
+		"displayName":"Golden, Glenn R.",
+		"firstName":"Glenn",
+		"lastName":"Golden",
+		"iid":"ggoldeni@etu",
+		"showEmail":"1",
+		"email":"ggolden@etudes.org",
+		"avatar":"/cdp/doc/avatar/j234j1234j.png",
+		"website":"http://www.apple.com",
+		"msn":"ggolden22@mac.com",
+		"skype":"ggolden at skype",
+		"googleplus":"ggolden22@gmail.com",
+		"linkedin":"ggolden at linkedin",
+		"aim":"ggolden22@me.com",
+		"facebook":"ggoldenfb",
+		"twitter":"ggoldentw",
+		"occupation":"Chief Cook and Bottle Washer",
+		"location":"Cyberspace",
+		"interests":"swimming, biking, sky diving, day trading, ..."
+	 }
+}

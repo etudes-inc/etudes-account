@@ -1,0 +1,430 @@
+<style type="text/css" media="all">
+</style>
+
+<!-- just one mode, so here it is - the rest is dialogs -->
+<div style="display:table; width: 100%;">
+	<div style="display:table-row">
+		<div style="display:table-cell; width:48%;">
+
+			<div class="e3_configurationFeature">
+				<div class="e3_configurationFeature_frame">
+					<div class="e3_configurationFeature_title">
+						<a id="account_name_link" href="" class="e3_offstage e3_tool_configure" title="Edit Name">Edit</a>
+						Name
+					</div>
+				</div>
+				<div class="e3_configurationFeature_body">
+					<div id="account_name_official" class="e3_instructions">Etudes uses official registrar name information.  To change, contact your campus registrar.</div>
+					<div class="e3_configure_set">
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">First Name:</div>
+							<div class="e3_configure_set_entry_field" id="account_name_first"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Last Name:</div>
+							<div class="e3_configure_set_entry_field" id="account_name_last"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="e3_configurationFeature">
+				<div class="e3_configurationFeature_frame">
+					<div class="e3_configurationFeature_title">
+						<a id="account_password_link" href="" class="e3_tool_configure" title="Edit Password">Edit</a>
+						Login
+					</div>
+				</div>
+				<div class="e3_configurationFeature_body">
+					<div class="e3_configure_set">
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">User ID:</div>
+							<div class="e3_configure_set_entry_field" id="account_eid"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Password:</div>
+							<div class="e3_configure_set_entry_field">*****</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="e3_configurationFeature">
+				<div class="e3_configurationFeature_frame">
+					<div class="e3_configurationFeature_title">
+						<a id="account_avatar_link" href="" class="e3_tool_configure" title="Edit Avatar">Edit</a>
+						Avatar
+					</div>
+				</div>
+				<div class="e3_configurationFeature_body">
+					<img class="e3_offstage" id="account_avatar" src="" border="0" alt="avatar" style="width:128px; height:auto;"/>
+					<div class="e3_instructions e3_offstage" id="account_avatar_none">No Avatar Defined</div>
+				</div>
+			</div>
+
+			<div class="e3_configurationFeature">
+				<div class="e3_configurationFeature_frame">
+					<div class="e3_configurationFeature_title">
+						<a id="account_signature_link" href="" class="e3_tool_configure" title="Edit Signature">Edit</a>
+						Signature
+					</div>
+				</div>
+				<div class="e3_configurationFeature_body">
+					<div class="e3_configure_set">
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_simple">
+								<div class="e3_configure_set_entry_field" id="account_signature_sig"></div>
+							</div>
+						</div>
+					</div>
+					<div class="e3_configure_set">
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Always Attach:</div>
+							<div class="e3_configure_set_entry_field" id="account_signature_include_sig"></div>
+						</div>
+					</div>
+					<textarea id="account_signature_sig_tmp"></textarea>
+					<button id="account_signature_sig_send_tmp">send</button>
+				</div>
+			</div>
+
+		</div>
+		<div style="display:table-cell; width:4%;">&nbsp;</div>
+		<div style="display:table-cell; width:48%;">
+
+			<div class="e3_configurationFeature">
+				<div class="e3_configurationFeature_frame">
+					<div class="e3_configurationFeature_title">
+						<a id="account_profile_link" href="" class="e3_tool_configure" title="Edit Profile">Edit</a>
+						Profile
+					</div>
+				</div>
+				<div class="e3_configurationFeature_body">
+					<div class="e3_configure_set">
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Location:</div>
+							<div class="e3_configure_set_entry_field" id="account_profile_location"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Occupation:</div>
+							<div class="e3_configure_set_entry_field" id="account_profile_occupation"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Interests:</div>
+							<div class="e3_configure_set_entry_field" id="account_profile_interests"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="e3_configurationFeature">
+				<div class="e3_configurationFeature_frame">
+					<div class="e3_configurationFeature_title">
+						<a id="account_email_link" href="" class="e3_tool_configure" title="Edit Email">Edit</a>
+						Email
+					</div>
+				</div>
+				<div class="e3_configurationFeature_body">
+					<div class="e3_configure_set">
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Email:</div>
+							<div class="e3_configure_set_entry_field" id="account_email_email"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Show Email Address:</div>
+							<div class="e3_configure_set_entry_field" id="account_email_show_email"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="e3_configurationFeature">
+				<div class="e3_configurationFeature_frame">
+					<div class="e3_configurationFeature_title">
+						<a id="account_contact_link" href="" class="e3_tool_configure" title="Edit Connect">Edit</a>
+						Connect
+					</div>
+				</div>
+				<div class="e3_configurationFeature_body">
+					<div class="e3_configure_set">
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">AIM:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_aim"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">MSN:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_msn"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Yahoo:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_yahoo"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Skype:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_skype"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Google+:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_googleplus"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">LinkedIn:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_linkedin"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Facebook:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_facebook"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Twitter:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_twitter"></div>
+						</div>
+						<div class="e3_configure_set_row">
+							<div class="e3_configure_set_entry_header">Web Site:</div>
+							<div class="e3_configure_set_entry_field" id="account_contact_website"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="account_navbar" class="e3_tool_navbar">&nbsp;</div>
+
+<!-- dialog to change name -->
+<div id="account_name_dialog" title="Name">
+	<div class="e3_dialog_instructions" style="width: 700px;">Make sure your first and last name are accurate.</div>
+	<div class="e3_dialog_section">
+		<div class="e3_dialog_header">Name</div>
+		<div class="e3_configure_set">
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">First Name:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_name_firstName" type="text" size="32" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Last Name:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_name_lastName" type="text" size="32" /></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- dialog to change password -->
+<div id="account_password_dialog" title="Password">
+	<div style="margin-bottom:12px; width: 700px;">A strong password helps secure your Etudes account from being hacked.</div>
+	<div>Create a <b>strong</b> password that has at least:<ol><li>8 characters.</li><li>A number.</li><li>An upper case letter.</li><li>A lower case letter.</li></ol></div>
+	<div class="e3_dialog_section">
+		<div class="e3_dialog_header">Password</div>
+		<div class="e3_configure_set">
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Enter New Password:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_password_1" type="password" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Verify New Password:</div>
+				<div class="e3_configure_set_entry_field">
+					<input id="account_password_2" type="password" />
+					<div class="e3_alert e3_offstage" id="account_password_alert">Enter the same password in both fields.</div>
+					<div class="e3_alert e3_offstage" id="account_password_alert2">Enter a password.</div>
+					<div class="e3_alert e3_offstage" id="account_password_alert3">Enter a STRONG password - see rules above.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- dialog to change signature -->
+<div id="account_signature_dialog" title="Signature">
+	<div class="e3_dialog_instructions e3_wide">Enter your signature, to be used on your private messages and discussion posts.</div>
+	<div class="e3_dialog_section">
+		<div class="e3_dialog_header">Signature</div>
+		<div class="e3_configure_set">
+			<div class="e3_configure_set_row">
+				<div id="account_signature_dialog_sig"></div>
+			</div>
+		</div>
+		<div class="e3_configure_set">
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_field">
+					<input type="checkbox" id="account_signature_dialog_include_sig" checked="checked" />
+					<label for="account_signature_dialog_include_sig">Always attach my signature</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- dialog to change email -->
+<div id="account_email_dialog" title="Email">
+	<div class="e3_dialog_instructions e3_wide">Enter current email information.</div>
+	<div class="e3_dialog_section">
+		<div class="e3_dialog_header">Email</div>
+		<div class="e3_configure_set">
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Email:</div>
+				<div class="e3_configure_set_entry_field">
+					<input id="account_email_dialog_email" type="text" size="32" />
+					<input type="checkbox" id="account_email_dialog_show_email" checked="checked" />
+					<label for="account_email_dialog_show_email">Show email address to site members</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- dialog to change contact info -->
+<div id="account_contact_dialog" title="Connect">
+	<div class="e3_dialog_instructions e3_wide">Enter current connect information.</div>
+	<div class="e3_dialog_section">
+		<div class="e3_dialog_header">Connect</div>
+		<div class="e3_configure_set">
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">AIM:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_contact_dialog_aim" type="text" size="32" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">MSN:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_contact_dialog_msn" type="text" size="32" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Yahoo:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_contact_dialog_yahoo" type="text" size="32" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Skype:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_contact_dialog_skype" type="text" size="32" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Google+:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_contact_dialog_googleplus" type="text" size="32" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">LinkedIn:</div>
+				<div class="e3_configure_set_entry_field">www.linkedin.com/in/ <input id="account_contact_dialog_linkedin" type="text" size="32" /> <a class="e3_toolUiLinkU" id="account_linkedin_help" href="" title="Help with your LinkedIn Public Profile URL">(?)</a></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Facebook:</div>
+				<div class="e3_configure_set_entry_field">facebook.com/ <input id="account_contact_dialog_facebook" type="text" size="32" /> <a class="e3_toolUiLinkU" id="account_facebook_help" href="" title="Help with your Facebook username">(?)</a></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Twitter:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_contact_dialog_twitter" type="text" size="32" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Web Site:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_contact_dialog_website" type="text" size="32" /></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- dialog to change profile info -->
+<div id="account_profile_dialog" title="Profile">
+	<div class="e3_dialog_instructions e3_wide">Enter some information about yourself.</div>
+	<div class="e3_dialog_section">
+		<div class="e3_dialog_header">Profile</div>
+
+		<div class="e3_configure_set">
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Location:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_profile_dialog_location" type="text" size="80" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Occupation:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_profile_dialog_occupation" type="text" size="80" /></div>
+			</div>
+			<div class="e3_configure_set_row">
+				<div class="e3_configure_set_entry_header">Interests:</div>
+				<div class="e3_configure_set_entry_field"><input id="account_profile_dialog_interests" type="text" size="80" /></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- dialog to change avatar -->
+<div id="account_avatar_dialog" title="Avatar">
+	<div class="e3_dialog_instructions e3_wide">Upload an image file (PNG, JPEG, or GIF format) to use as your avatar.</div>
+	<div class="e3_dialog_section">
+		<div class="e3_dialog_header">Avatar</div>
+		<div class="e3_stacked_edit">
+			<div class="e3_stacked_edit_field">
+				<img class="e3_offstage" id="account_avatar_dialog_preview" src="" border="0" alt="avatar" style="width:128px; height:auto;"/>
+				<div class="e3_dialog_instructions e3_offstage" id="account_avatar_dialog_none">No Avatar Defined</div>
+			</div>
+		</div>
+		<form method="post" encType="multipart/form-data" action="" id="account_avatar_dialog_upload_form">
+			<div class="e3_stacked_edit">
+				<div class="e3_stacked_edit_field">
+					<div id="account_avatar_dialog_upload_holder">
+						<input id="account_avatar_dialog_upload" name="avatar" type="file" accept="image/*" />
+					</div>
+				</div>
+			</div>
+			<div class="e3_stacked_edit">
+				<div class="e3_stacked_edit_field e3_offstage" id="account_avatar_dialog_clear_holder">
+					<input type="checkbox" name="clear" value="1" id="account_avatar_dialog_clear" />
+					<label for="account_avatar_dialog_clear">Remove Avatar</label>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- alerts for invalid password data on save -->
+<div id="account_alertNoSave_1" title="Problems Exist">
+	<div class="e3_alert">
+		Before saving, enter your new password.
+	</div>
+</div>
+<div id="account_alertNoSave_2" title="Problems Exist">
+	<div class="e3_alert">
+		Before saving, enter the same password in both fields.
+	</div>
+</div>
+<div id="account_alertNoSave_3" title="Problems Exist">
+	<div class="e3_alert">
+		Before saving, enter a strong password that follows the specified rules.
+	</div>
+</div>
+
+<!-- alert for non-image selected for avatar -->
+<div id="account_alertAvatarImage" title="Select Image for Avatar">
+	<div class="e3_alert">
+		You new Avatar must be an image file in the PNG, JPEG or GIF format.
+	</div>
+</div>
+
+<!-- alert for linked in help -->
+<div id="account_alertLinked_help"  title="About Your LinkedIn Public Profile URL" style="display: none;">
+	<div class="e3_wide">
+		Your Linked in account has a "public profile url".  To find or edit this:
+		<ul>
+			<li>Login to LinkedIn</li>
+			<li>Edit your Profile</li>
+			<li>Note your public profile URL displayed under your profile picture</li>
+		</ul>
+		<p><img src="support/icons/linkedin_help_1.png" />
+		<p>When you set your custom profile URL, you will see a dialog like this:		
+		<p><img src="support/icons/linkedin_help_2.png" />
+		<p><a class="e3_toolUiLinkU" href="http://help.linkedin.com/app/answers/detail/a_id/87" target="_blank">Learn about customizing LinkedIn's public profile URLs.</a><br />
+		<p>Enter the unique portion of the public profile URL here (the part in the box).  You may also enter the full public profile URL, and Etudes will extract the unique portion for you.
+	</div>
+</div>
+
+<!-- alert for facebook help -->
+<div id="account_alertFacebook_help"  title="About Your Facebook username" style="display: none;">
+	<div class="e3_wide">
+		Your facebook account has a "username".  To find or edit this:
+		<ul>
+			<li><a class="e3_toolUiLinkU" href="https://www.facebook.com/username" target="_blank">Go to Facebook's username page.</a>  Login to your facebook account on the way.</li>
+			<li>Note your current username</li>
+		</ul>
+		<p><img src="support/icons/facebook_help_1.png" />
+		<p>When you then click on "Edit Username", you can view and change your username:		
+		<p><img src="support/icons/facebook_help_2.png" />
+		<p><a class="e3_toolUiLinkU" href="https://www.facebook.com/help/329992603752372" target="_blank">Learn more about Facebook's usernames.</a><br />
+		<p>Enter the username here.  You may also enter the full facebook URL, and Etudes will extract the username for you.
+	</div>
+</div>
